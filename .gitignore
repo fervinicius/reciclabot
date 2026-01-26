@@ -1,18 +1,17 @@
-# Dependências do Node (são muito pesadas, quem baixar o projeto instala com npm install)
 node_modules/
 
-# Logs de erro npm
+# npm error logs
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-# Variáveis de Ambiente (SEGURANÇA CRÍTICA: Nunca suba isso!)
+# Environment variables
 .env
 
-# Banco de dados SQLite (Não suba seus dados de teste para o Github)
+# Database files
 *.db
 *.sqlite
 
-# Arquivos de sistema operacional (Mac e Windows)
+# Operating system files (Mac and Windows)
 .DS_Store
 Thumbs.db
