@@ -4,7 +4,7 @@ const router = express.Router();
 
 const coletaControllers = require('../controllers/coletaController');
 
-// Define as rotas (Endpoints)
+// Define the routes (Endpoints)
 router.get('/coletas', coletaControllers.listarColetas);
 
 router.post('/coletas', coletaControllers.criarColeta);

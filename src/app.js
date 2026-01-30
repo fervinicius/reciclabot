@@ -1,14 +1,14 @@
-require('dotenv').config(); // Carrega variáveis de ambiente do arquivo .env
+require('dotenv').config(); // Carrying environment variables from .env file
 
 const express = require('express');
 
-const helmet = require('helmet'); // Importa o Helmet para segurança HTTP headers
+const helmet = require('helmet'); // Import Helmet for security headers
 
 const app = express();
 
-app.use(helmet()); // Usa o Helmet para proteger o app definindo vários HTTP headers
+app.use(helmet());
 
-app.use(express.json()); // Middleware para entender JSON
+app.use(express.json()); // Middleware to understand JSON requests
 
 const coletaRoutes = require('./routes/coletaRoutes');
 
