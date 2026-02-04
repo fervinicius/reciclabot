@@ -1,11 +1,11 @@
 # ♻️ ReciclaBot
 
-> Uma API RESTful desenvolvida para otimizar o processo de atendimento e gestão de coletas de materiais recicláveis.
+> A RESTful API developed to optimize the service and management process for collecting recyclable materials.
 
 ![Badge License](https://img.shields.io/badge/license-MIT-green)
 ![Badge Node](https://img.shields.io/badge/Node.js-v24+-green)
 
-## 📌 Sobre o Projeto
+## 📌 About the Project
 
 O **ReciclaBot** é um projeto de extensão universitária focado no tema **ESG (Environmental, Social, and Governance)**. O objetivo principal é fornecer uma solução tecnológica de *backend* para cooperativas de reciclagem, substituindo o agendamento manual (planilhas/papel) por um sistema digital automatizado.
 
@@ -13,7 +13,7 @@ Esta API serve como o "cérebro" para um futuro Chatbot, permitindo registrar, l
 
 ---
 
-## 🚀 Tecnologias Utilizadas
+## 🚀 Technologies Used
 
 O projeto foi desenvolvido utilizando as seguintes ferramentas e bibliotecas:
 
@@ -25,7 +25,7 @@ O projeto foi desenvolvido utilizando as seguintes ferramentas e bibliotecas:
 
 ---
 
-## ⚙️ Pré-requisitos
+## ⚙️ Prerequisites
 
 Antes de começar, você precisará ter instalado em sua máquina:
 * [Git](https://git-scm.com)
@@ -34,21 +34,21 @@ Antes de começar, você precisará ter instalado em sua máquina:
 
 ---
 
-## 🔧 Instalação e Configuração
+## 🔧 Installation and Configuration
 
 Siga os passos abaixo para rodar o projeto localmente:
 
-### 1. Clone o repositório
+### 1. Clone the Repository
 ```bash
 git clone https://github.com/fervinicius/reciclabot.git
 ```
 
-### 2. Instale as dependências
+### 2. Install Dependencies
 ```bash
 npm install
 ```
 
-### 3. Configure as variáveis de ambiente
+### 3. Configure Environment Variables
 Crie um arquivo `.env` na raiz do projeto e adicione as seguintes variáveis:
 ```
 PORT=3000
@@ -56,13 +56,13 @@ DB_NAME=nome_do_banco_de_dados.db
 NODE_ENV=development
 ```
 
-### 4. Inicie o servidor
+### 4. Start the Server
 ```bash
 npm start
 ```
 O servidor estará rodando em `http://localhost:3000` (ou na porta que você definiu no arquivo `.env`).
 
-### 5. Documentação da API
+### 5. API Documentation
 | Método | Endpoint           | Descrição                                      |
 |--------|--------------------|-----------------------------------------------|
 | GET    | /api/coletas       | Lista todas as solicitações de coleta.        |
@@ -70,7 +70,7 @@ O servidor estará rodando em `http://localhost:3000` (ou na porta que você def
 | PUT    | /api/coletas/:id   | Atualiza o status de uma coleta existente.    |
 | DELETE | /api/coletas/:id   | Remove uma solicitação do banco de dados.     |
 
-### 6. Arquitetura do Projeto
+### 6. Project Architecture
 O projeto segue o padrão MVC (Model-View-Controller) adaptado para API, garantindo organização e escalabilidade:
 
 reciclabot/
@@ -84,7 +84,7 @@ reciclabot/
 ├── package.json       # Dependências e scripts
 └── README.md          # Documentação
 
-## 📝 Licença
+## 📝 License
 O projeto está licenciado sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
 
 Desenvolvido por Vinicius Ferreira como parte do Projeto de Extensão Universitária.
