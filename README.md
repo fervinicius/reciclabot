@@ -7,36 +7,36 @@
 
 ## 📌 About the Project
 
-O **ReciclaBot** é um projeto de extensão universitária focado no tema **ESG (Environmental, Social, and Governance)**. O objetivo principal é fornecer uma solução tecnológica de *backend* para cooperativas de reciclagem, substituindo o agendamento manual (planilhas/papel) por um sistema digital automatizado.
+The **ReciclaBot** is a University Extension Project focused on the topic **ESG (Environmental, Social, Governance)**. The main objective is to provide a backend technological solution for recycling cooperatives, replacing manual scheduling (spreadsheets/paper) with an automated digital system.
 
-Esta API serve como o "cérebro" para um futuro Chatbot, permitindo registrar, listar, atualizar e deletar solicitações de coleta de forma rápida e organizada.
+This API serves as the "brain" for a future Chatbot, allowing register, list, update and delete collection requests in a fast and organized manner.
 
 ---
 
 ## 🚀 Technologies Used
 
-O projeto foi desenvolvido utilizando as seguintes ferramentas e bibliotecas:
+The project was developed using the following tools and libraries:
 
-* **[Node.js](https://nodejs.org/):** Ambiente de execução JavaScript.
-* **[Express](https://expressjs.com/):** Framework para construção da API.
-* **[SQLite3](https://www.sqlite.org/):** Banco de dados relacional leve (Serverless) para persistência dos dados.
-* **[Dotenv](https://www.npmjs.com/package/dotenv):** Gerenciamento de variáveis de ambiente.
-* **[Helmet](https://helmetjs.github.io/):** Middlewares de segurança para proteção da API.
+* **[Node.js](https://nodejs.org/):** JavaScript runtime environment.
+* **[Express](https://expressjs.com/):** Framework for building API.
+* **[SQLite3](https://www.sqlite.org/):** Lightweight relational database (Serverless) for data persistence.
+* **[Dotenv](https://www.npmjs.com/package/dotenv):** Environment variable management.
+* **[Helmet](https://helmetjs.github.io/):** Security Middleware for API protection.
 
 ---
 
 ## ⚙️ Prerequisites
 
-Antes de começar, você precisará ter instalado em sua máquina:
+Before begin, you will need to install in your machine:
 * [Git](https://git-scm.com)
-* [Node.js](https://nodejs.org/en/) (versão 24 ou superior recomendada)
-* Um cliente de requisições HTTP (ex: [Insomnia](https://insomnia.rest/) ou [Postman](https://www.postman.com/))
+* [Node.js](https://nodejs.org/en/) (version 24 or higher is recommended)
+* A HTTP requests client (ex: [Insomnia](https://insomnia.rest/) or [Postman](https://www.postman.com/))
 
 ---
 
 ## 🔧 Installation and Configuration
 
-Siga os passos abaixo para rodar o projeto localmente:
+Follow the steps below to run the project locally:
 
 ### 1. Clone the Repository
 ```bash
@@ -49,7 +49,7 @@ npm install
 ```
 
 ### 3. Configure Environment Variables
-Crie um arquivo `.env` na raiz do projeto e adicione as seguintes variáveis:
+Create a file `.env` in the project root and add the following variables:
 ```
 PORT=3000
 DB_NAME=nome_do_banco_de_dados.db
@@ -60,31 +60,31 @@ NODE_ENV=development
 ```bash
 npm start
 ```
-O servidor estará rodando em `http://localhost:3000` (ou na porta que você definiu no arquivo `.env`).
+The server will be running on `http://localhost:3000` (or at the port where you definined the file `.env`).
 
 ### 5. API Documentation
-| Método | Endpoint           | Descrição                                      |
+| Method | Endpoint           | Description                                   |
 |--------|--------------------|-----------------------------------------------|
-| GET    | /api/coletas       | Lista todas as solicitações de coleta.        |
-| POST   | /api/coletas       | Registra uma nova solicitação.                |
-| PUT    | /api/coletas/:id   | Atualiza o status de uma coleta existente.    |
-| DELETE | /api/coletas/:id   | Remove uma solicitação do banco de dados.     |
+| GET    | /api/coletas       | List all the collecting requests.             |
+| POST   | /api/coletas       | Registers a new request.                      |
+| PUT    | /api/coletas/:id   | Updates the status of an existing collecting. |
+| DELETE | /api/coletas/:id   | Deletes a request from the database.          |
 
 ### 6. Project Architecture
-O projeto segue o padrão MVC (Model-View-Controller) adaptado para API, garantindo organização e escalabilidade:
+The project follows MVC Pattern (Model-View-Controller) adapted for API, ensuring organization and scalability:
 
 reciclabot/
 ├── src/
-│   ├── controllers/   # Lógica das regras de negócio (CRUD)
-│   ├── routes/        # Definição das rotas da API
-│   ├── database/      # Configuração e conexão com SQLite
-│   └── app.js         # Entrada da aplicação e config do servidor
-├── .env               # Variáveis de ambiente (não versionado)
-├── .gitignore         # Arquivos ignorados pelo Git
-├── package.json       # Dependências e scripts
-└── README.md          # Documentação
+│   ├── controllers/   # Business rules logic (CRUD)
+│   ├── routes/        # Definition the API routes
+│   ├── database/      # Configuration and connection to SQLite
+│   └── app.js         # Application's input and server config
+├── .env               # Environment Variables (not versionated)
+├── .gitignore         # Files ignored by Git
+├── package.json       # Dependencies and scripts
+└── README.md          # Documentation
 
 ## 📝 License
-O projeto está licenciado sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+The project is licensed by MIT. See the file [LICENSE](LICENSE) for more details.
 
-Desenvolvido por Vinicius Ferreira como parte do Projeto de Extensão Universitária.
+Developed by Vinicius Ferreira as part of a University Extension Project.
